@@ -41,9 +41,12 @@ Practicing creating components to make a simple video player in React
 
 ## <a name="rendering-components-to-the-dom"></a>Rendering Components to the DOM
 
-To render a component to the DOM invoke the render method on the ReactDOM object and pass in 2 arguments
-1. Your component that you want rendered (using jsx syntax)
-2. Where you want your component to be rendered on the page
+To render a component to the DOM invoke the render method on the ReactDOM object and pass in 2 arguments.
+
+1. Your component that you want rendered (using jsx syntax).
+
+2. Where you want your component to be rendered on the page.
+
 ```javascript
 ReactDOM.render(<App />, document.querySelector('.container'));
 ```
