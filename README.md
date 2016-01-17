@@ -9,7 +9,7 @@ Practicing creating components to make a simple video player in React
     * React
     * ReactDOM
 6. Create 1st React component
-    * Functional componenent
+    * Functional components[link](#functionalComponents)
         * w/ES5 syntax
         * w/ES6 syntax
 7. Render component to the DOM
@@ -24,13 +24,15 @@ Practicing creating components to make a simple video player in React
     * Explain super and how we're accessing properties on the parent class
     * Explain the meaning of `this` inside ES6 classes vs. functions
 
-## Functional Components ES5 vs ES6
+## <a name="functionalComponents"></a>Functional Components ES5 vs ES6
 
+### ES5
 ```javascript
     const App = function () {
         return <div>Hi!</div>
     }
 ```
+### ES6
 ```javascript
     const App = () => {
         return (
