@@ -137,7 +137,7 @@ event => console.log(event.target.value)
 ```
 
 ## The TRUE Meaning of `this`
-With ES6 classes, the meaning of `this` is a little bit different. It's cool because when we're trying to get access to something outside the scope of our ES5 functions, we're used to doing something like the following:
+With ES6 classes, the meaning of `this` is a slightly different. It's cool because when we're trying to get access to something outside the scope of our ES5 functions, we're used to doing something like the following:
 
 ```javascript
 var a = this;
