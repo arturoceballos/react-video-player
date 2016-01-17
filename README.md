@@ -120,3 +120,12 @@ Adding the `onChange` event handler to our input
 ```javascript
 return <input onChange={this.onInputChange} />;
 ```
+
+To clean up our code we can take advantage of the arrow functions in ES6. We'll refactor our `<input/>` so it looks a little more like this:
+```javascript
+return <input onChange={(event) => console.log(event.target.value)} />;
+```
+You can even get rid of the parentheses where our arguments go if we only have one argument
+```javascript
+event => console.log(event.target.value)
+```
