@@ -31,7 +31,7 @@ Practicing creating components to make a simple video player in React
         return <div>Hi!</div>
     }
 ```
-```
+```javascript
     const App = () => {
         return (
             <div>
