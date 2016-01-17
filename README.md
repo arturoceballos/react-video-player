@@ -62,6 +62,8 @@ ReactDOM.render(<App />, document.querySelector('.container'));
 
 1. Create component
 2. Export your new component
+3. Import your new component into your main.js file (index.js in our case)
+4. Render our new component into our previous function based component we created earlier
 
 ### Creating component using ES6 Class syntax
 ```javascript
@@ -87,4 +89,20 @@ class SearchBar extends Component {
 ### Exporting the component
 ```javascript
 export default SearchBar;
+```
+
+### Importing Component and Rendering it in index.js
+
+```javascript
+import SearchBar from './components/search_bar';
+```
+And rendering it
+```javascript
+const App = () => {
+    return (
+        <div>
+            <SearchBar />
+        </div>
+    );
+};
 ```
