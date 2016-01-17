@@ -45,6 +45,8 @@ import ReactDOM from 'react-dom';
         return <div>Hi!</div>
     };
 ```
+We only create Function-based components when we're not changing the state of a component.
+Try to use these as often as possible.
 
 ## <a name="rendering-components-to-the-dom"></a>Rendering Components to the DOM
 
@@ -60,7 +62,10 @@ ReactDOM.render(<App />, document.querySelector('.container'));
 
 ## <a name="creating-a-class-based-component"></a>Creating a Class Based Component
 
-1. Create component
+We only create Class-based components when we're trying to change the state of the component.
+To start, we'll
+
+1. Create a component
 2. Export your new component
 3. Import your new component into your main.js file (index.js in our case)
 4. Render our new component into our previous function based component we created earlier
@@ -150,3 +155,4 @@ class SearchBar extends Component {
     }
 }
 ```
+This best demonstrates the difference between Function-based components and Class-based components.
