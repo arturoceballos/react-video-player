@@ -136,9 +136,7 @@ You can even get rid of the parentheses where our arguments go if we only have o
 event => console.log(event.target.value)
 ```
 
-## The true meaning of ```javascript
-this
-```
+## The true meaning of `this`
 With ES6 classes, the meaning of `this` is a little bit different. It's cool because when we're trying to get access to something outside the scope of our ES5 functions, we're used to doing something like the following:
 
 ```javascript
