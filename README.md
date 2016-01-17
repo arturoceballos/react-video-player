@@ -11,7 +11,7 @@ Practicing creating components to make a simple video player in React
 6. Create 1st React component
     * Functional componenent
         * w/ES5 syntax
-```
+```javascript
     const App = function() {
         return <div>Hi!</div>
     }
