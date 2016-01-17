@@ -109,6 +109,11 @@ const App = () => {
 
 ##Adding an event handler
 
+Adding the `onChange` event handler to our input
+```javascript
+return <input onChange={this.onInputChange} />;
+```
+
 Creating the event handler
 ```javascript
 onInputChange (event) {
@@ -116,12 +121,7 @@ onInputChange (event) {
 }
 ```
 
-Adding the `onChange` event handler to our input
-```javascript
-return <input onChange={this.onInputChange} />;
-```
-
-To clean up our code we can take advantage of the arrow functions in ES6. We'll refactor our `<input/>` so it looks a little more like this:
+We can take advantage of the arrow functions in ES6 to clean up our code. We'll refactor our `<input/>` so it looks a little more like this:
 ```javascript
 return <input onChange={(event) => console.log(event.target.value)} />;
 ```
