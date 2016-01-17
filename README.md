@@ -11,9 +11,9 @@ Practicing creating components to make a simple video player in React
 6. Create 1st React component
     * Functional componenent
         * w/ES5 syntax
-            * `const App = function() {
+            * ```const App = function() {
                 return <div>Hi!</div>
-            }`
+            }```
         * w/ES6 syntax
 7. Render component to the DOM
 8. Create Class-Based component that'll be nested in our first component
