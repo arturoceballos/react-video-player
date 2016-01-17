@@ -138,9 +138,20 @@ event => console.log(event.target.value)
 
 ## Refactoring Our Component Even Further
 
+With ES6 classes, the meaning of `this` is a little bit different. It's cool because when we're trying to get access to something outside the scope of our ES5 functions, we're used to doing something like the following:
+
+```javascript
+var a = this;
+
+function () {
+
+}
+```
+We don't have to worry about workarounds like that with ES6 classes.
+
 The constructor method is used to access properties on the React object.
 To do this we need to use the `super()` method.
-Now we can access properties from our parent (React) class like `state`.
+Now we can access properties from our parent (Component) class like `state`.
 
 ```javascript
 class SearchBar extends Component {
