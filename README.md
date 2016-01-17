@@ -22,7 +22,7 @@ Practicing creating components to make a simple video player in React
     * Explain that `render ()` is a method on the React.Component object used for rendering component to the DOM
         * `constructor ()` is the same thing
     * Explain super and how we're accessing properties on the parent class
-    * Explain the meaning of `this` inside ES6 classes vs. functions
+    * Explain the meaning of [this](#the-true-meaning-of-this) inside ES6 classes vs. functions
 10. [Update the value of our "Search Bar"](#updating-the-value-of-our-input)
 
 ## <a name="importing-react-libraries"></a>Importing React Libraries
