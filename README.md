@@ -18,7 +18,7 @@ Practicing creating components to make a simple video player in React
 9. [Add an onChange event handler](#adding-an-event-handler) to our component
     * `onChange={someUpdateMethod}`
     * Create update method
-10. Refactor our component
+10. [Refactor our component](#refactoring-our-component-even-further)
     * Explain that `render ()` is a method on the React.Component object used for rendering component to the DOM
         * `constructor ()` is the same thing
     * Explain super and how we're accessing properties on the parent class
@@ -128,4 +128,25 @@ return <input onChange={(event) => console.log(event.target.value)} />;
 You can even get rid of the parentheses where our arguments go if we only have one argument
 ```javascript
 event => console.log(event.target.value)
+```
+
+## Refactoring Our Component Even Further
+
+```javascript
+class SearchBar extends Component {
+    constructor (props) {
+        super(props);
+
+        this.state = { term: '' };
+    }
+
+    render () {
+        return (
+            <div>
+                <input onChange={event => this.setState({ term: event.target.value})} />
+                Value of the input: {this.state.term}
+            </div>
+        );
+    }
+}
 ```
