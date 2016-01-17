@@ -136,18 +136,21 @@ You can even get rid of the parentheses where our arguments go if we only have o
 event => console.log(event.target.value)
 ```
 
-## Refactoring Our Component Even Further
-
+## The true meaning of ```javascript
+this
+```
 With ES6 classes, the meaning of `this` is a little bit different. It's cool because when we're trying to get access to something outside the scope of our ES5 functions, we're used to doing something like the following:
 
 ```javascript
 var a = this;
 
 function () {
-
+    console.log(a);
 }
 ```
-We don't have to worry about workarounds like that with ES6 classes.
+We don't have to worry about workarounds like the one above with ES6 classes.
+
+## Refactoring Our Component Even Further
 
 The constructor method is used to access properties on the React object.
 To do this we need to use the `super()` method.
