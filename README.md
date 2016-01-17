@@ -137,6 +137,10 @@ event => console.log(event.target.value)
 
 ## Refactoring Our Component Even Further
 
+The constructor method is used to access properties on the React object.
+To do this we need to use the `super()` method.
+Now we can access properties from our parent (React) class like `state`.
+
 ```javascript
 class SearchBar extends Component {
     constructor (props) {
@@ -144,7 +148,10 @@ class SearchBar extends Component {
 
         this.state = { term: '' };
     }
+```
+To render our components we use the render () method.
 
+```javascript
     render () {
         return (
             <div>
@@ -155,4 +162,4 @@ class SearchBar extends Component {
     }
 }
 ```
-This best demonstrates the difference between Function-based components and Class-based components.
+This best demonstrates the difference between Function-based components and Class-based components and why we use Class-based components to change the state of a component.
