@@ -5,7 +5,7 @@ Practicing creating components to make a simple video player in React
 1. Clone repo
 2. `npm install`
 4. Go to `localhost:8080`
-5. Import React libraries
+5. [Import React libraries](#import-react-libraries)
     * React
     * ReactDOM
 6. Create 1st React component
@@ -49,4 +49,11 @@ To render a component to the DOM invoke the render method on the ReactDOM object
 
 ```javascript
 ReactDOM.render(<App />, document.querySelector('.container'));
+```
+
+## <a name="importing-react-libraries"></a>Importing React Libraries
+
+```javascript
+import React from 'react';
+import ReactDOM from 'react-dom';
 ```
