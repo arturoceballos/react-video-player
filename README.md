@@ -5,7 +5,7 @@ Practicing creating components to make a simple video player in React
 1. Clone repo
 2. `npm install`
 4. Go to `localhost:8080`
-5. [Import React libraries](#import-react-libraries)
+5. [Import React libraries](#importing-react-libraries)
     * React
     * ReactDOM
 6. Create 1st React component
@@ -23,6 +23,13 @@ Practicing creating components to make a simple video player in React
         * `constructor ()` is the same thing
     * Explain super and how we're accessing properties on the parent class
     * Explain the meaning of `this` inside ES6 classes vs. functions
+
+## <a name="importing-react-libraries"></a>Importing React Libraries
+
+```javascript
+import React from 'react';
+import ReactDOM from 'react-dom';
+```
 
 ## <a name="functional-components-es5-vs-es6"></a>Functional Components ES5 vs ES6
 
@@ -49,11 +56,4 @@ To render a component to the DOM invoke the render method on the ReactDOM object
 
 ```javascript
 ReactDOM.render(<App />, document.querySelector('.container'));
-```
-
-## <a name="importing-react-libraries"></a>Importing React Libraries
-
-```javascript
-import React from 'react';
-import ReactDOM from 'react-dom';
 ```
