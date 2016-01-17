@@ -72,7 +72,19 @@ ReactDOM.render(<App />, document.querySelector('.container'));
  +}
 ```
 
-### Exporting the component
+You can also pull off the Component property from the React object and extend it directly
+```javascript
++import React, { Component } from 'react';
 ```
+And your component will look like
+```javascript
+class SearchBar extends Component {
+      render () {		      render () {
+          return <input/>;		          return <input/>;
+      }		      }
+```
+
+### Exporting the component
+```javascript
 export default SearchBar;
 ```
