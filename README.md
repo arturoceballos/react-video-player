@@ -35,10 +35,6 @@ Practicing creating components to make a simple video player in React
 ### ES6
 ```javascript
     const App = () => {
-        return (
-            <div>
-                <SearchBar />
-            </div>
-        );
+        return <div>Hi!</div>
     };
 ```
