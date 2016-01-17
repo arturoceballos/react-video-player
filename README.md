@@ -29,3 +29,9 @@ Practicing creating components to make a simple video player in React
         * `constructor ()` is the same thing
     * Explain super and how we're accessing properties on the parent class
     * Explain the meaning of `this` inside ES6 classes vs. functions
+
+```
+    const App = function() {
+        return <div>Hi!</div>
+    }
+```
