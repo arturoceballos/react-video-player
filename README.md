@@ -149,7 +149,7 @@ class SearchBar extends Component {
         this.state = { term: '' };
     }
 ```
-To render our components we use the render () method.
+To render our components we use the `render ()` method.
 
 ```javascript
     render () {
