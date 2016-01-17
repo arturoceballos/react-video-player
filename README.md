@@ -24,7 +24,7 @@ Practicing creating components to make a simple video player in React
     * Explain super and how we're accessing properties on the parent class
     * Explain the meaning of `this` inside ES6 classes vs. functions
 
-## <a name="functionalComponents"></a>Functional Components ES5 vs ES6
+## <a name="functional-components-es5-vs-es6"></a>Functional Components ES5 vs ES6
 
 ### ES5
 ```javascript
