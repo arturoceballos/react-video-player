@@ -18,15 +18,6 @@ Practicing creating components to make a simple video player in React
   ```
 
         * w/ES6 syntax
-* ```javascript
-    const App = () => {
-        return (
-            <div>
-                <SearchBar />
-            </div>
-        );
-    };
-  ```
 7. Render component to the DOM
 8. Create Class-Based component that'll be nested in our first component
     * Explain the difference between Functional component's and Class-Based component's
