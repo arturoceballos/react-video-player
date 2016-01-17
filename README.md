@@ -114,6 +114,7 @@ Creating the event handler
 onInputChange (event) {
     console.log(event.target.value)
 }
+```
 
 Adding the `onChange` event handler to our input
 ```javascript
