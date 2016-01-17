@@ -163,3 +163,14 @@ To render our components we use the `render ()` method.
 }
 ```
 This best demonstrates the difference between Function-based components and Class-based components and why we use Class-based components to change the state of a component.
+
+### Updating the Value of our `<input/>`
+
+Although what we're typing in our "Search Bar" is updating the value of our state, we're not updating the value of our "Search Bar".
+Let's do that now.
+
+```javascript
+<input
+        value={this.state.term}
+        onChange={event => this.setState({ term: event.target.value})} />
+```
