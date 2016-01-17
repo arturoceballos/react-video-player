@@ -12,7 +12,7 @@ Practicing creating components to make a simple video player in React
     * [Functional components](#functional-components-es5-vs-es6)
         * w/ES5 syntax
         * w/ES6 syntax
-7. Render component to the DOM
+7. [Render component to the DOM](#rendering-components-to-the-dom)
 8. Create Class-Based component that'll be nested in our first component
     * Explain the difference between Functional component's and Class-Based component's
 9. Add an onChange event handler to our component
@@ -37,4 +37,13 @@ Practicing creating components to make a simple video player in React
     const App = () => {
         return <div>Hi!</div>
     };
+```
+
+## <a name="rendering-components-to-the-dom"></a>Rendering Components to the DOM
+
+To render a component to the DOM invoke the render method on the ReactDOM object and pass in 2 arguments
+1. Your component that you want rendered (using jsx syntax)
+2. Where you want your component to be rendered on the page
+```javascript
+ReactDOM.render(<App />, document.querySelector('.container'));
 ```
