@@ -35,7 +35,7 @@ import ReactDOM from 'react-dom';
 
 ### ES5
 ```javascript
-    const App = function () {
+    var App = function () {
         return <div>Hi!</div>
     }
 ```
@@ -56,4 +56,20 @@ To render a component to the DOM invoke the render method on the ReactDOM object
 
 ```javascript
 ReactDOM.render(<App />, document.querySelector('.container'));
+```
+
+## <a name="creating-a-class-based-component"></a>Creating a Class Based Component
+
+1. Create component
+```
++class SearchBar extends React.Component {
+ -    return <input/>		 +    render () {
+ -};		 +        return <input/>;
+ +    }
+ +}
+```
+
+2. Export your new component
+```
+export default SearchBar;
 ```
