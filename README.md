@@ -15,7 +15,7 @@ Practicing creating components to make a simple video player in React
 7. [Render component to the DOM](#rendering-components-to-the-dom)
 8. [Create Class-Based component](#creating-a-class-based-component) that'll be nested in our first component
     * Explain the difference between Functional component's and Class-Based component's
-9. Add an onChange event handler to our component
+9. [Add an onChange event handler](#adding-an-event-handler) to our component
     * `onChange={someUpdateMethod}`
     * Create update method
 10. Refactor our component
@@ -105,4 +105,17 @@ const App = () => {
         </div>
     );
 };
+```
+
+##Adding an event handler
+
+Creating the event handler
+```javascript
+onInputChange (event) {
+    console.log(event.target.value)
+}
+
+Adding the `onChange` event handler to our input
+```javascript
+return <input onChange={this.onInputChange} />;
 ```
