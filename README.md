@@ -65,23 +65,23 @@ ReactDOM.render(<App />, document.querySelector('.container'));
 
 ### Creating component using ES6 Class syntax
 ```javascript
-+class SearchBar extends React.Component {
- -    return <input/>		 +    render () {
- -};		 +        return <input/>;
- +    }
- +}
+class SearchBar extends React.Component {
+    render () {
+        return <input/>
+    }
+}
 ```
 
 You can also pull off the Component property from the React object and extend it directly
 ```javascript
-+import React, { Component } from 'react';
+import React, { Component } from 'react';
 ```
 And your component will look like
 ```javascript
 class SearchBar extends Component {
-      render () {		      render () {
-          return <input/>;		          return <input/>;
-      }		      }
+    render () {
+        return <input/>
+    }
 ```
 
 ### Exporting the component
