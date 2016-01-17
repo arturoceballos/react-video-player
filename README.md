@@ -9,7 +9,7 @@ Practicing creating components to make a simple video player in React
     * React
     * ReactDOM
 6. Create 1st React component
-    * [Functional components](#functionalComponents)
+    * [Functional components](#functional-components-es5-vs-es6)
         * w/ES5 syntax
         * w/ES6 syntax
 7. Render component to the DOM
