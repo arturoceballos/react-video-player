@@ -9,13 +9,9 @@ Practicing creating components to make a simple video player in React
     * React
     * ReactDOM
 6. Create 1st React component
-    * Functional componenent w/ES5 syntax
-```javascript
-    const App = function() {
-        return <div>Hi!</div>
-    }
-```
-    * Functional componenent w/ES6 syntax
+    * Functional componenent
+        * w/ES5 syntax
+        * w/ES6 syntax
 7. Render component to the DOM
 8. Create Class-Based component that'll be nested in our first component
     * Explain the difference between Functional component's and Class-Based component's
@@ -27,3 +23,20 @@ Practicing creating components to make a simple video player in React
         * `constructor ()` is the same thing
     * Explain super and how we're accessing properties on the parent class
     * Explain the meaning of `this` inside ES6 classes vs. functions
+
+## Functional Components ES5 vs ES6
+
+```javascript
+    const App = function () {
+        return <div>Hi!</div>
+    }
+```
+```
+    const App = () => {
+        return (
+            <div>
+                <SearchBar />
+            </div>
+        );
+    };
+```
