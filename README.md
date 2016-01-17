@@ -61,7 +61,10 @@ ReactDOM.render(<App />, document.querySelector('.container'));
 ## <a name="creating-a-class-based-component"></a>Creating a Class Based Component
 
 1. Create component
-```
+2. Export your new component
+
+### Creating component using ES6 Class syntax
+```javascript
 +class SearchBar extends React.Component {
  -    return <input/>		 +    render () {
  -};		 +        return <input/>;
@@ -69,7 +72,7 @@ ReactDOM.render(<App />, document.querySelector('.container'));
  +}
 ```
 
-2. Export your new component
+### Exporting the component
 ```
 export default SearchBar;
 ```
