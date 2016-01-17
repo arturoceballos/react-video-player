@@ -3,7 +3,7 @@
 Practicing creating components to make a simple video player in React
 
 1. Clone repo
-2. npm install
+2. `npm install`
 4. Go to `localhost:8080`
 5. Import React libraries
     * React
